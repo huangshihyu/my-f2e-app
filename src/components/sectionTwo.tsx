@@ -1,0 +1,25 @@
+import React, { useEffect } from 'react';
+import logo from '../images/logo192.png';
+import { gsap } from 'gsap';
+
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+const SectionTwo = () => {
+  useEffect(() => {
+    gsap.to('.App-lloo', {
+      x: 100,
+      duration: 2,
+      ease: 'bounce',
+    });
+  }, []);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-lloo" alt="logo" />
+        <p>換section2</p>
+      </header>
+    </div>
+  );
+};
+
+export default SectionTwo;
