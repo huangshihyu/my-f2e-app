@@ -1,0 +1,27 @@
+@import '_var';
+body {
+  background: conic-gradient(
+    from 180deg at 50% 57.62%,
+    #000237 -14.95deg,
+    #000000 27.9deg,
+    #0e0034 57.28deg,
+    #370000 107.08deg,
+    #160000 171.16deg,
+    #2f0000 196.12deg,
+    #350000 218.37deg,
+    #000000 288.84deg,
+    #000123 324.86deg,
+    #000237 345.05deg,
+    #000000 387.9deg
+  );
+  color: #fff;
+  overflow-x: hidden;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
