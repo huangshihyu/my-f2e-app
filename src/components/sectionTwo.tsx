@@ -5,13 +5,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const SectionTwo = () => {
-  useEffect(() => {
-    gsap.to('.App-lloo', {
-      x: 100,
-      duration: 2,
-      ease: 'bounce',
-    });
-  }, []);
   return (
     <div className="App">
       <header className="App-header">

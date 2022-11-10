@@ -1,4 +1,5 @@
 @import '_var';
+
 body {
   background: conic-gradient(
     from 180deg at 50% 57.62%,
@@ -17,11 +18,78 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
-.App {
-  text-align: center;
+.hide {
+  display: none;
 }
+.section {
+  height: 700px;
+  border-bottom: 2px solid red;
+  header {
+    padding: 34px 0 0 0;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    h1 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.07em;
+    }
+    .login-area {
+      top: 34px;
+      right: 52px;
+      .button {
+        font-size: 16px;
+        line-height: 36px;
+        padding: 0 12px;
+        border-radius: 3px;
+        margin: 0 5px;
+        &.button-primary {
+          background-color: $main-green;
+          color: $gray1;
+        }
+        &.button-secondary {
+          color: $main-green;
+          background-color: rgba(0, 255, 224, 0.5);
+        }
+      }
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    button {
+      color: $main-green;
+      line-height: 36px;
+      padding: 0 2px;
+      margin: 0 15px;
+    }
+  }
+
+  .banner {
+    top: 300px;
+    width: 100%;
+    color: $main-purple;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 87px;
+    letter-spacing: 0.07em;
+
+    h1:first-child {
+      font-weight: 700;
+      line-height: 71px;
+      margin-bottom: 4px;
+    }
+  }
+  #insectL,
+  #insectR {
+    position: absolute;
+    top: 200px;
+    transition: 0.6s;
+    transform: scale(1.2);
+  }
+  #insectL {
+    left: -35px;
+  }
+  #insectR {
+    right: 0;
+  }
 }

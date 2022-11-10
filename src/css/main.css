@@ -4,11 +4,78 @@ body {
   overflow-x: hidden;
 }
 
-.App {
-  text-align: center;
+.hide {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  height: 700px;
+  border-bottom: 2px solid red;
+}
+.section header {
+  padding: 34px 0 0 0;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.section header h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.07em;
+}
+.section header .login-area {
+  top: 34px;
+  right: 52px;
+}
+.section header .login-area .button {
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 12px;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.section header .login-area .button.button-primary {
+  background-color: #00ffe0;
+  color: #333;
+}
+.section header .login-area .button.button-secondary {
+  color: #00ffe0;
+  background-color: rgba(0, 255, 224, 0.5);
+}
+.section header button {
+  color: #00ffe0;
+  line-height: 36px;
+  padding: 0 2px;
+  margin: 0 15px;
+}
+.section .banner {
+  top: 300px;
+  width: 100%;
+  color: #7963fe;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 87px;
+  letter-spacing: 0.07em;
+}
+.section .banner h1:first-child {
+  font-weight: 700;
+  line-height: 71px;
+  margin-bottom: 4px;
+}
+.section #insectL,
+.section #insectR {
+  position: absolute;
+  top: 200px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.section #insectL {
+  left: -35px;
+}
+.section #insectR {
+  right: 0;
 }
