@@ -93,3 +93,41 @@ body {
     right: 0;
   }
 }
+
+#section2 {
+  .jelly {
+    left: calc((100% - 381px) / 2);
+    z-index: 3;
+    transform-origin: center;
+  }
+  .information {
+    .text-block {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 700px;
+      height: 200px;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.04em;
+    }
+
+    .text-block:nth-child(1) {
+      top: 18%;
+      left: calc(((100% - 700px) / 2) - 351px);
+      background: no-repeat center/60% url('../images/section2-text1-BG.png');
+    }
+    .text-block:nth-child(2) {
+      top: 38%;
+      left: calc((100% - 700px) / 2);
+      background: no-repeat center/90% url('../images/section2-text2-BG.png');
+    }
+    .text-block:nth-child(3) {
+      top: 22%;
+      left: calc(((100% - 700px) / 2) + 351px);
+      background: no-repeat center/80% url('../images/section2-text3-BG.png');
+    }
+  }
+}

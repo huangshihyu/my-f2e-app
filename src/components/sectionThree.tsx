@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-const SectionTwo = () => {
+const SectionThree = () => {
   const prevScrollY = useRef(0);
   const sectionTwoPosition = useRef(0);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -52,7 +52,7 @@ const SectionTwo = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sectionRef.current]);
   return (
-    <div id="section2" className="relative section" ref={sectionRef}>
+    <div id="section3" className="relative section" ref={sectionRef}>
       <img src={jelly} className="jelly absolute" alt="jelly" style={{ top: `${jellyMove}px` }} />
       <div className="information">
         <div className="text-block">
@@ -69,4 +69,4 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default SectionThree;
