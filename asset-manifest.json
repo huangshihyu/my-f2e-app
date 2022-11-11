@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-f2e-app/static/css/main.3f2e07b2.css",
+    "main.js": "/my-f2e-app/static/js/main.db9c5296.js",
+    "static/js/787.28cb0dcd.chunk.js": "/my-f2e-app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/my-f2e-app/index.html",
+    "main.3f2e07b2.css.map": "/my-f2e-app/static/css/main.3f2e07b2.css.map",
+    "main.db9c5296.js.map": "/my-f2e-app/static/js/main.db9c5296.js.map",
+    "787.28cb0dcd.chunk.js.map": "/my-f2e-app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f2e07b2.css",
+    "static/js/main.db9c5296.js"
+  ]
+}
