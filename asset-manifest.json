@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/my-f2e-app/static/css/main.4a4bd893.css",
-    "main.js": "/my-f2e-app/static/js/main.2274b4e3.js",
+    "main.css": "/my-f2e-app/static/css/main.c2753ee0.css",
+    "main.js": "/my-f2e-app/static/js/main.48175948.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-f2e-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/section1-insectL.png": "/my-f2e-app/static/media/section1-insectL.2b23fafdbde50c031299.png",
+    "static/media/jelly_r.png": "/my-f2e-app/static/media/jelly_r.5216dc6cb3d2cab4b081.png",
     "static/media/section1-insectR.png": "/my-f2e-app/static/media/section1-insectR.38e8ac07a90e102e9ebf.png",
-    "static/media/jelly.png": "/my-f2e-app/static/media/jelly.0c2a0905aa0373a0e174.png",
+    "static/media/jelly_l.png": "/my-f2e-app/static/media/jelly_l.67a4ca6316e1d6742c2c.png",
     "static/media/section2-text1-BG.png": "/my-f2e-app/static/media/section2-text1-BG.f22cf6d155ee5a2d15c9.png",
     "static/media/section2-text2-BG.png": "/my-f2e-app/static/media/section2-text2-BG.f22cf6d155ee5a2d15c9.png",
     "static/media/section2-text3-BG.png": "/my-f2e-app/static/media/section2-text3-BG.078753345895c916e487.png",
     "index.html": "/my-f2e-app/index.html",
-    "main.4a4bd893.css.map": "/my-f2e-app/static/css/main.4a4bd893.css.map",
-    "main.2274b4e3.js.map": "/my-f2e-app/static/js/main.2274b4e3.js.map",
+    "main.c2753ee0.css.map": "/my-f2e-app/static/css/main.c2753ee0.css.map",
+    "main.48175948.js.map": "/my-f2e-app/static/js/main.48175948.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-f2e-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4bd893.css",
-    "static/js/main.2274b4e3.js"
+    "static/css/main.c2753ee0.css",
+    "static/js/main.48175948.js"
   ]
 }
