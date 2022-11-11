@@ -78,14 +78,28 @@ body {
   right: 0;
 }
 
-#section2 .jelly {
+#section2 .deformed-jelly-area {
   left: calc((100% - 381px) / 2);
-  z-index: 3;
-  transform-origin: center;
+  bottom: 9%;
+  width: 381px;
+  height: 381px;
+  z-index: 4;
+}
+#section2 .deformed-jelly-area .deformed-jelly {
+  width: 50%;
+  height: 80%;
+}
+#section2 .deformed-jelly-area .deformed-jelly:first-child {
+  transform: translateX(17px);
+  z-index: 2;
+}
+#section2 .deformed-jelly-area .deformed-jelly:last-child {
+  transform: translateX(-17px);
+  z-index: 1;
 }
 #section2 .information .text-block {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,4 +123,12 @@ body {
   top: 22%;
   left: calc((100% - 700px) / 2 + 351px);
   background: no-repeat center/80% url("../images/section2-text3-BG.png");
+}
+#section2 .main-info {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  top: 700px;
+  letter-spacing: 0.02em;
+  color: #7350ff;
 }

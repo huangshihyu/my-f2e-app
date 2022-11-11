@@ -10,6 +10,7 @@ function App() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionThree />
     </div>
   );
 }
