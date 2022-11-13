@@ -22,7 +22,7 @@ body {
   display: none;
 }
 .section {
-  height: 700px;
+  height: 800px;
   border-bottom: 2px solid red;
   header {
     padding: 34px 0 0 0;
@@ -97,7 +97,7 @@ body {
 #section2 {
   .deformed-jelly-area {
     left: calc((100% - 381px) / 2);
-    bottom: 9%;
+    top: 5%;
     width: 381px;
     height: 381px;
     z-index: 4;
@@ -149,7 +149,7 @@ body {
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
-    top: 700px;
+    bottom: 5%;
     letter-spacing: 0.02em;
     color: $purple;
   }

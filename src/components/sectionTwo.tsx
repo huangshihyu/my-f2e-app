@@ -7,12 +7,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const SectionTwo = () => {
-  const prevScrollY = useRef(0);
-  const sectionTwoPosition = useRef(0);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const jellyRef = useRef<HTMLDivElement>(null);
-  const testRef = useRef<HTMLDivElement>(null);
-  const [jellyMove, setJellyMove] = useState(0);
 
   useEffect(() => {
     const sectionTwoTrigger = gsap.timeline({
@@ -23,60 +18,48 @@ const SectionTwo = () => {
         scrub: true,
       },
       onStart: () => {
-        // console.log('onStart position:', window.scrollY);
+        console.log('1.onStart position:', window.scrollY);
       },
       onComplete: () => {
-        // sectionTwoTrigger.fromTo('#jelly', { opacity: '1' }, { opacity: '0' });
+        console.log('2.onComplete position:', window.scrollY);
       },
     });
+    sectionTwoTrigger.fromTo(
+      '.deformed-jelly-area',
+      { y: 0 },
+      { transform: 'scale(2.4, 0.5)', y: 500 },
+    );
     const jellyTrigger = gsap.timeline({
       scrollTrigger: {
-        trigger: '.main-info',
-        start: 'top top',
-
+        trigger: '#section2',
+        start: '+=500',
+        end: '+=200',
         scrub: true,
       },
       onStart: () => {
-        // console.log('onStart position:', window.scrollY);
+        console.log('3.onStart position:', window.scrollY);
       },
       onComplete: () => {
-        // sectionTwoTrigger.fromTo('#jelly', { opacity: '1' }, { opacity: '0' });
+        console.log('4.onComplete position:', window.scrollY);
       },
     });
-
-    sectionTwoTrigger.fromTo(
-      '.deformed-jelly-area',
-      { transform: 'none' },
-      { transform: 'scale(2.4, 0.5)' },
+    jellyTrigger.fromTo('.main-info', { opacity: 0 }, { opacity: 1 });
+    jellyTrigger.fromTo(
+      '.deformed-jelly:first-child',
+      { x: 17, opacity: 1 },
+      { x: -100, opacity: 0 },
     );
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      // offsetTop = 相對父層位置(Scroll 到這邊進入此 element)
-      // offsetHeight = 此 element 高度
-      if (sectionRef.current) {
-        const { offsetTop, offsetHeight } = sectionRef.current;
-        const isJellyMove = currentScrollY > offsetTop && currentScrollY < offsetTop + offsetHeight;
-
-        if (isJellyMove) {
-          setJellyMove(currentScrollY - offsetTop);
-          console.log(currentScrollY - offsetTop);
-        }
-      }
-
-      prevScrollY.current = currentScrollY;
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [sectionRef.current]);
-
-  useEffect(() => {
-    //  bannerRef.current?.classList.add('hide');
+    jellyTrigger.fromTo(
+      '.deformed-jelly:last-child',
+      { x: -17, opacity: 1 },
+      { x: 120, opacity: 0 },
+    );
   }, []);
   return (
     <div id="section2" className="relative section" ref={sectionRef}>
       <div
         className="deformed-jelly-area absolute flex justify-center "
-        style={{ top: `${jellyMove}px` }}
+        // style={{ top: `${jellyMove}px` }}
       >
         <img src={jellyL} alt="jelly" className="deformed-jelly" />
         <img src={jellyR} alt="jelly" className="deformed-jelly" />

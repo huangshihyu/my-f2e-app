@@ -9,7 +9,7 @@ body {
 }
 
 .section {
-  height: 700px;
+  height: 800px;
   border-bottom: 2px solid red;
 }
 .section header {
@@ -68,8 +68,10 @@ body {
 .section #insectR {
   position: absolute;
   top: 200px;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .section #insectL {
   left: -35px;
@@ -80,7 +82,7 @@ body {
 
 #section2 .deformed-jelly-area {
   left: calc((100% - 381px) / 2);
-  bottom: 9%;
+  top: 5%;
   width: 381px;
   height: 381px;
   z-index: 4;
@@ -90,19 +92,27 @@ body {
   height: 80%;
 }
 #section2 .deformed-jelly-area .deformed-jelly:first-child {
-  transform: translateX(17px);
+  -webkit-transform: translateX(17px);
+          transform: translateX(17px);
   z-index: 2;
 }
 #section2 .deformed-jelly-area .deformed-jelly:last-child {
-  transform: translateX(-17px);
+  -webkit-transform: translateX(-17px);
+          transform: translateX(-17px);
   z-index: 1;
 }
 #section2 .information .text-block {
   position: absolute;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 700px;
   height: 200px;
   font-weight: 400;
@@ -128,7 +138,7 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
-  top: 700px;
+  bottom: 5%;
   letter-spacing: 0.02em;
   color: #7350ff;
 }
